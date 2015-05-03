@@ -1,0 +1,89 @@
+h1,h2,h3,h4,h5
+{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.masthead
+{
+    height:120px;
+    background-image:url("Images/center-letter-logo-unr-2.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 200px 100px;
+}
+
+.navbar .navbar-nav
+{
+  height: 45px;  
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse
+{
+  text-align: center;
+  height:200px;
+}
+
+.navbar-nav > li
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li img
+{
+    margin-left: 0px;
+    padding-right: 10px;
+    height: 15px;
+    width: auto;
+}
+
+.carat-heading img
+{
+    position: relative;
+    bottom:11px;
+    height: 35px;
+    width: auto;
+}
+
+.carat-heading img,h1
+{
+    display: inline;
+}
+
+.row-centered
+{
+    text-align:center;
+}
+.col-centered
+{
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.log-in-button
+{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.button
+{
+    display: inline-block;
+}
+
+footer
+{
+    text-align: center;
+}
+
+a:hover
+{
+    cursor: pointer;
+}

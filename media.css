@@ -1,0 +1,53 @@
+h3
+{
+    margin-left: 10px;
+}
+
+.jumbotron
+{
+    height:100px;
+    background-image: url("Images/full-moon.jpg");
+    background-position: 750px -30px;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width : 768px)
+{
+    .jumbotron
+    {
+        height:250px;
+    }
+}
+
+.thumbnail
+{
+    position:relative;
+    overflow:hidden;
+    border:0 none;
+}
+
+.thumbnail h4
+{
+    font-size: 34px;
+}
+
+.thumbnail a
+{
+    font-size: 25px;
+    margin-top: 50px;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(66, 139, 202, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}

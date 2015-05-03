@@ -1,0 +1,27 @@
+.spacer
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+img.logo
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.vertical-center
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width : 480px)
+{
+    img.logo
+    {
+        height:250px;
+        width:auto;
+    }
+}

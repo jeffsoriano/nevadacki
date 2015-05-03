@@ -1,0 +1,40 @@
+h3
+{
+    margin-left: 10px;
+}
+
+.navbar
+{
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+}
+
+.jumbotron
+{
+    height:600px;
+    background-image: url("Images/full-moon.jpg");
+    background-position: 750px -30px;
+    background-color: black;
+    background-repeat: no-repeat;
+    
+}
+
+.carat-heading img,h2
+{
+    display: inline;
+}
+
+.carat-heading h2
+{
+    position: relative;
+    bottom: 3px;
+    color: white;
+}
+
+@media only screen and (max-width : 768px)
+{
+    .jumbotron
+    {
+        height:550px;
+    }
+}

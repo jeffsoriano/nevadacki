@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="who-are-we.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown active">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <img class="header-image" src="photos/chalk.png"/>
+            </div>
+        </div>
+
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>What is Circle K International?</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <p>Circle K is the largest collegiate community service, leadership development, and friendship organization in the world. Circle K clubs are organized and sponsored by a Kiwanis club on a college or university campus. It is a self-governing organization and elects its own officers, conducts its own meetings, and determines its own service activities. This high degree of autonomy allows for a unique service experience driven entirely by the members for the members.</p>
+                <p>Circle K is an international community service organization with over 13,250 members worldwide in 17 nations, including the Bahamas, Barbados, Canada, Jamaica, St. Lucia, Colombia, Philippines, Nigeria, Ecuador, Malaysia, Panama, Dominican Republic, Taiwan, Antigua, Australia, Suriname, and the United States. Circle K blends community service and leadership training with the opportunity to meet many other college students at service projects, conferences, and conventions and form genuine lifelong friendships with people of all walks of life.</p>
+                <p>UNR Circle K is a part of this international family.  We are a highly independent club entirely run by active members, collaborating with our local community to implement important service projects. UNR Circle K also works within a broader geographic sense, often traveling to California to work with the rest of our district. This extends our opportunities to serve and to meet many different people, making Circle K a significant part of many of our members' college experience.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="Images/cki-logo.png"/>
+            </div>
+        </div>
+        
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Our three tenets</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Service</h2>
+                <p>Service is the main hallmark of Circle K International. CKI members from around the world contribute to their communities and make the world a better place, collectively performing over a million hours of service every year. Nevada CKI directly impacts the local community by cleaning the Truckee River, building trails along the Tahoe Rim, hosting holiday events for elementary school children, volunteering at Relay For Life, and more! Our service also extends to the state of California, where we help the other clubs in our division with their own projects.</p>
+                <h2>Leadership</h2>
+                <p>As a highly autonomous club, we give our members the opportunity to hold positions of power that govern the different administrative and executive duties of the club. These leadership responsibilities can be found at all levels of CKI and are accessible to anyone willing to pay it forward and to bringing out the best in themselves and in those around them.</p>
+                <h2>Fellowship</h2>
+                 <p>Perhaps one of the most rewarding aspects of Circle K is the potential to build lifelong relationships. Whether we are participating in a service project or just having fun during one of our many socials, you will find a friend here at Nevada CKI. Our members have the opportunity to meet with a broad range of people, from student to active community member to Kiwanian. To top it all off, we're one of the friendliest clubs you'll ever meet.</p>
+            </div>
+            <div class="col-md-4 tenet">
+                <p><em>"I pledge to uphold the objects of Circle K International,<br> 
+                        To foster compassion and goodwill toward others through service and leadership, <br>
+                        To develop my abilities and the abilities of all people, <br>
+                        And to dedicate myself to the realization of mankind's potential."</em></p>
+            </div>
+        </div>
+        
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>How do I become a member?</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <p>First and foremost, we encourage you to attend our club meetings, which take place every Wednesday, 7:00 PM, inside the Joe Crowley Student Union's Graduate Student Lounge, located on the third floor of the JCSU. Come along to get more information on how to attend your first service event/social. There will also be free food,  new people to meet, and the chance to win a raffle prize!</p>
+                <p>To get the full benefits of being a Circle K member, you must submit a membership application form and pay a $30 fee. Once you do that, you get the following benefits:</p>
+                <ul>
+                    <li>Become affiliated with a sophisticated network of individuals</li>
+                    <li>Access to out-of-state events</li>
+                    <li>A super sweet club t-shirt</li>
+                    <li>A member card</li>
+                    <li>A member handbok</li>
+                    <li>The ability to run for a leadership position</li>
+                    <li>The ability to elect the club board members</li>
+                    <li>And everything else that a non-paid member gets! The opportunity to make lasting friendships, serve your community, and have a more fulfilling college experience.</li>
+                </ul>
+                <p>So what are you waiting for? Come on down and meet us!</p>
+            </div>
+            <div class="col-md-4">
+                <div class="timeline">
+                    <ul class="events">
+                        <li style="width: 100%;"><b>1947</b> - First CKI Club chartered at Carthage College, Illinois. </li>
+                        <li style="width: 100%;"><b>1949</b> - CKI becomes an International organization with the chartering of a club at the University of Western Ontario. </li>
+                        <li style="width: 100%;"><b>1953</b> - Kenneth B. Creasy of Ohia Wesleyan Univeristy elected as President of CKI. </li>
+                        <li style="width: 100%;"><b>1957</b> - Texas-Oklahoma becomes first district of CKI.</li>
+                        <li style="width: 100%;"><b>1982</b> - CKI memberships surpasses 14,500 members. </li>
+                        <li style="width: 100%;"><b>2000</b> - Members of CKI surpass the $420,000 mark in the effort to eliminate iodine deficiency disorders. </li>
+                        <li style="width: 100%;"><b>2007</b> - CKI announces its international fundraiser, Saving Lives: The Six Cents Initiative, which focuses on getting clean water to children who need it most.</li>
+                    </ul> <!-- end .events -->
+                
+                    <!--
+                    <ul class="intervals">
+                        <li class="first">2003</li>
+                        <li>2004</li>
+                        <li>2005</li>
+                        <li>2006</li>
+                        <li>2007</li>
+                        <li>2008</li>
+                        <li class="last">2009</li>
+                    </ul> <!-- end .intervals --> 
+                </div> <!-- end .timeline -->
+            </div>
+        </div>
+    </div>
+
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+</body>
+</html>

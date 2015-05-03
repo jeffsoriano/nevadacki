@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Initiatives</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="initiatives.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown active">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>District Fundraising Initiatives</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Each year, the Cal-Nev-Ha District of Circle K endorses three District Fundraising Initiatives in order to focus fundraising efforts across the district. This year, Nevada Circle K partners with its fellow district clubs in support of the following programs:
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Pediatric Trauma Program (PTP)</h2>
+                <p>
+                    Recognizing the serious need for education and training in the areas of pediatric trauma and injury prevention, the Kiwanis Cal-Nev-Ha Foundation established the Pediatric Trauma Program (PTP) in 1994. Our mission is to develop local projects, which will reduce the number of children in our district who are killed or injured by trauma.
+                </p>
+                <p>
+                    Utilizing the knowledge and expertise of our partner hospitals, the Foundation identifies projects the Kiwanis family can undertake to address the issue of Pediatric Trauma within their own communities. The Foundation's partnership with childrens hospitals in Oakland, San Diego, Loma Linda, Madera, Honolulu and Reno connect the Kiwanis family to the issue of Pediatric Trauma.
+                </p>
+                <p>
+                    The Kiwanis Cal-Nev-Ha Foundation works closely with our partner hospitals to provide funding to train pediatric doctors, nurses and first responders, to purchase much-needed pediatric medical equipment and to create or expand community outreach programs.
+                </p>
+                <a href="http://www.cnhfoundation.org/how-to-help/h2h-pediatric-trauma-program/">More info</a>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="Images/pediatric-trauma-program.jpg"/>
+            </div>
+        </div>
+        
+        <div class="spacer"></div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h2>The Eliminate Project</h2>
+                <p>
+                    With The Eliminate Project, Kiwanis International and UNICEF have joined forces to eliminate maternal and neonatal tetanus. This deadly disease steals the lives of nearly 60,000 innocent babies and a significant number of women each year. The effects of the disease are excruciating - tiny newborns suffer repeated, painful convulsions and extreme sensitivity to light and touch.
+                </p>
+                <p>
+                    To eliminate MNT from the Earth, more than 100 million mothers and their future babies must be immunized. This requires vaccines, syringes, safe storage, transportation, thousands of skilled staff and more. It will take US$110 million - and the dedicated work of UNICEF and every member of the Kiwanis family.
+                </p>
+                <p>
+                    Kiwanis and UNICEF joined forces to tackle iodine deficiency disorders, achieving one of the most significant public health successes of the 20th century. Now, they are eliminating MNT from the face of the Earth. And in doing so, the project will reach the poorest, most neglected mothers and babies with additional lifesaving health care. The end of this one disease means the beginning of better health for so many families.
+                </p>
+                <a href="http://sites.kiwanis.org/Kiwanis/en/theELIMINATEproject/home.aspx">More info</a>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="Images/eliminate-project-2.jpg"/>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Kiwanis Family House</h2>
+                <p>
+                    The Kiwanis Family House is there to help families of ill or injured children and adults being treated at the UC Davis Medical Center or the Shriners Hospital by providing secure and low cost temporary housing. Due to the urgent need of such a place, the KFH was built as a response to those parents who could not be with their children as they underwent life threatening conditions.
+                </p>
+                <p>
+                    Because families often arrive in emergency situations, the Kiwanis Family House also provides a clothes closet and toiletries, a food closet, and all necessary cooking and dining equipment. The Family House provides clean bedding and towels.  Kiwanis volunteers and staff assist families 24 hours a day every day of the year. There is a nominal rent fee of $50 per night for families staying at the Family House.
+                </p>
+                <p>
+                    The Kiwanis Family House has been able to successfully meet its mission of helping families in need since 1984 only through the financial and volunteer support of Kiwanis clubs and their members, and through the generosity of the community at large. It is with this continued support that the Kiwanis Family House will be able to continue to help these families in need far into the future.
+                </p>
+                <a href="http://kiwanisfamilyhouse.org/who-we-are/missionhistory/">More info</a>
+            </div>
+            <div class="col-md-4">
+                <img class="logo vertical-center" src="Images/kiwanis-family-house.png"/>
+            </div>
+        </div>
+        
+        <div class="spacer"></div>
+        
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>District Service Initiative</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Each year, the CNH District of Circle K endorses a specific service initiate in which clubs from all over our district are encouraged to dedicate themselves to reaching out and helping that respective cause. The District Service Initiative serves as a pathway for clubs from all over Cal-Nev-Ha to work towards a common goal under a unified cause. This year, Nevada Circle K partners with its fellow district clubs in support of the following program:
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Leaping for Literacy</h2>
+                <p>
+                    The overall goal of this DSI is to promote literacy in children and adults and help those with reading disabilities or reading roadblocks such as needing help with translating applications/documents written in English.
+                </p>
+                
+                <p>
+                    Literacy today is often overlooked. With a modernized culture that places much emphasis on technology, reading has begun to wane in popularity. Reading is useful both as a tool to navigate the world around us, as well as a means to exercise our imaginations. Unlike television or movies, books are unique! They allow us to imagine a story, to see it through our own creative lens. Encouraging and increasing one's reading capabilities can increase our imaginative capabilities as well as creativity.
+                </p>
+                
+                <p>
+                   This initiative will also focus on promoting education through reading. On a second note, "Leaping towards Literacy" can also be beneficial to children living in poverty. Access to education is vastly important in escaping poverty. Literacy can act as a catalyst to obtaining stable job in order to support oneself and one's family. By spreading awareness about the importance of literacy we can help encourage education of people at all ages. 
+                </p>
+            </div>
+            <!--
+            <div class="col-md4-">
+                Image goes here
+            </div>
+            -->
+        </div>
+    </div>
+    
+    
+    
+    
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+
+</body>
+</html>

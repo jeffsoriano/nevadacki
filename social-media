@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="social-media.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+    <script src="main.js"></script>
+    <script src="media.js"></script>
+    <script>
+        !function(a){
+            var b="embedly-platform",c="script";
+            if(!a.getElementById(b)){
+                var d=a.createElement(c);
+                d.id=b,d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)
+                }
+        }(document);
+    </script>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Friend us! Follow us! Watch us!</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Be friends with us!</h4>
+                        <p><a href="https://www.facebook.com/pages/Nevada-Circle-K-International/259765824059597?ref_type=bookmark" class="label label-danger">Like our page</a></p>
+                        <br>
+                        <p><a href="https://www.facebook.com/groups/16036565205/" class="label label-danger">Join our group</a></p>
+                    </div>
+                    <img src="Images/facebook.png" alt="..."/>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>There's no filter on our service</h4>
+                        <a href="http://www.enjoygram.com/tag/nevadacki" class="label label-danger">@nevada_cki</a><br>
+                    </div>
+                    <img src="Images/instagram.png" alt="..."/>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>#Service</h4>
+                        <h4>#Leadership</h4>
+                        <h4>#Fellowship</h4>
+                        <a href="https://twitter.com/nevadacki" class="label label-danger">@nevadacki</a><br>
+                    </div>
+                    <img src="Images/twitter.png" alt="..."/>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Watch the three tenets in action</h4>
+                        <a href="https://www.youtube.com/user/NevadaCKI" class="label label-danger">Our channel</a>
+                    </div>
+                    <img src="Images/youtube.png" alt="..."/>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+</body>
+</html>

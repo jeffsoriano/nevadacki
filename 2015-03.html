@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="calendar.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="jquery.equalheights.js"></script>
+    <script src="main.js"></script>
+    <script src="calendar.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        <a href="user-pw/index.php" class="btn btn-primary pull-right log-in-button">Log in</a>  
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we.html"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives.html"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board.html"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="2015-03.html">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media.html"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter.html"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog.html"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Check out what we're up to, then join us!</h1>
+        </div>       
+    </div>
+    
+    <div class="container">
+        <div class="calendar">
+            <ul class="month-browser">
+                <li class="calendar-nav">
+                    <<
+                    <a href="2015-02.html">February</a>
+                </li>
+                <li id="current-month">
+                    March 2015
+                </li>
+                <li class="calendar-nav">
+                    <a href="#">April</a>
+                    >>
+                </li>
+            </ul>
+            
+            <ul class="weekdays">
+                <li>Sunday</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+            </ul>
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">March</span>
+                         1
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Mar</span>
+                         2
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Mar</span>
+                         3
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Mar</span>
+                         4
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Mar</span>
+                         5
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Mar</span>
+                         6
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#kiwanisTakeoverModal">Kiwanis Takeover</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Mar</span>
+                         7
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kingsBeachParadeModal">King's Beach Parade</a>
+                        <div class="event-time">
+                            9:30 am to 12:30 pm
+                        </div>
+                    </div>
+                    <div class="social-info">
+                        <a class="social-name" data-toggle="modal" data-target="#gameNightModal">Interfamily Game Night</a>
+                        <div class="event-time">
+                            4:00 pm
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Mar</span>
+                         8
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Mar</span>
+                         9
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Mar</span>
+                         10
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Mar</span>
+                         11
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Mar</span>
+                         12
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Mar</span>
+                         13
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kiwanisBikeShopModal">Kiwanis Bike Shop</a>
+                        <div class="event-time">
+                            3:00 pm to 5:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Mar</span>
+                         14
+                    </div>          
+                </li>
+            </ul>
+        
+        
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Mar</span>
+                         15
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Mar</span>
+                         16
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Mar</span>
+                         17
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Mar</span>
+                         18
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Mar</span>
+                         19
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Mar</span>
+                         20
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#sunrisers-meeting-Modal">Reno Sunrisers Kiwanis Meeting</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Mar</span>
+                         21
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Mar</span>
+                         22
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Mar</span>
+                         23
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Mar</span>
+                         24
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Mar</span>
+                         25
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Mar</span>
+                         26
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Mar</span>
+                         27
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kiwanisBikeShopModal">Kiwanis Bike Shop</a>
+                        <div class="event-time">
+                            3:00 pm to 5:00 pm
+                        </div>
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#dconModal">DCON</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Mar</span>
+                         28
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#dconModal">DCON</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Mar</span>
+                         29
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#dconModal">DCON</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Mar</span>
+                         30
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Mar</span>
+                         31
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Apr</span>
+                         1
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Apr</span>
+                         2
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Apr</span>
+                         3
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#sunrisers-meeting-Modal">Reno Sunrisers Kiwanis Meeting</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Apr</span>
+                         4
+                    </div>
+                </li>
+            </ul>
+            
+        </div> 
+    </div>
+    
+    <!-- Modals -->
+    
+    <div class="modal fade" id="sunrisers-meeting-Modal" tabindex="-1" role="dialog" aria-labelledby="sunrisers-meeting-Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Reno Sunrisers Kiwanis Meeting</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every other Friday, 7:00 am to 8:00 am</p>
+                <p><b>Where?</b></p>
+                <p>Gold N' Silver Inn, 790 W 4th St, Reno NV</p>
+                <p><b>Carpool</b></p>
+                <p>6:45 am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Attend our sponsoring Kiwanis club's meeting! Get to know your Kiwanians and listen to an interesting speaker each time you attend. There is free breakfast for attendees! Cap is set for this event, with priority going to new and general members.  </p>           
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=54" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+        <div class="modal fade" id="meeting-Modal" tabindex="-1" role="dialog" aria-labelledby="meeting-Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">General Meeting</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every Wednesday, 7:00 pm to 8:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>UNR, Graduate Student Lounge @ Joe Crowley Student Union</p>
+                <p><b>Details</b></p>
+                <p>Meet our members, get updated on events, eat free food, win raffle prizes, and have fun!</p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kiwanisBikeShopModal" tabindex="-1" role="dialog" aria-labelledby="kiwanisBikeShopModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Kiwanis Bike Shop</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every other Friday, 3:00 pm to 5:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Kiwanis Bike Shop, Carton Drive, Reno, NV</p>
+                <p><b>Carpool:</b></p>
+                <p>2:45 pm @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Work on fixing bikes, making PTP dolls, and organizing books! This is a great chance to get more involved with the Kiwanis Family.This event happens every other Friday from 3:00-5:00pm! </p>
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                <a href="https://docs.google.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=245" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kKidsModal" tabindex="-1" role="dialog" aria-labelledby="kKidsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">K-Kids</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every Friday, 11:50 am to 1:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Lemelson STEM Academy</p>
+                <p><b>Carpool:</b></p>
+                <p>11:40 am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Join us every Friday at Lemelson STEM Academy! We work with K-Kids to promote Service, Leadership, and Fellowship to elementary school students. This is a Kiwanis Family event!</p>
+                <p><b>Contact</b></p>
+                <p>Jaylen Nacional: <a href="mailto:k-kids@nevadacki.com">k-kids@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=314" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="gameNightModal" tabindex="-1" role="dialog" aria-labelledby="gameNightModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Interfamliy Game Night</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>March 7th, 4:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>TBA</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Do you know how awesome your family is? Do you want to show the rest of the club how awesome your family is? Well this is your night! Come to the Joe, room 323 at 7:30, to compete with the other families. Only one family will leave as the victor!</p>
+                <p><b>Contact</b></p>
+                <p>Sarah Smith: <a href="mailto:membership@nevadacki.com">membership@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheets/d/1nbvFVyuCLV4Ff_jU7DzQSIDXO4WfpkTup5Za2HCXwZg/edit#gid=541833297" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kiwanisTakeoverModal" tabindex="-1" role="dialog" aria-labelledby="kiwanisTakeoverModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Kiwanis Takeover</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>March 6th, 7:00 am pm to 8:00 am</p>
+                <p><b>Where?</b></p>
+                <p>Gold n' Silver Inn</p>
+                <p><b>Carpool:</b></p>
+                <p>6:30 am</p>
+                <p><b>Details</b></p>
+                <p>Visit with our sponsoring Kiwnais Club by attending the Takeover. Like in the fall, we will be auctioning off different things as a fundraiser for our club. Attend to get a jump start on your MRP status for the next year!</p>
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheets/d/1nbvFVyuCLV4Ff_jU7DzQSIDXO4WfpkTup5Za2HCXwZg/edit#gid=425" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kingsBeachParadeModal" tabindex="-1" role="dialog" aria-labelledby="kingsBeachParadeModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">King's Beach Parade</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>March 7th, 9:30 am pm to 12:30 pm</p>
+                <p><b>Where?</b></p>
+                <p>King's Beach, Lake Tahoe</p>
+                <p><b>Carpool:</b></p>
+                <p>8:15 am</p>
+                <p><b>Details</b></p>
+                <p>Come out to the quaint little village of King's Beach, Lake Tahoe to volunteer at the annual King's Beach parade. We will be helping parade entries line up before the parade, carrying the North Tahoe Business Association sponsor banner in the parade, and also acting as road blockers.</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@nevadacki.com">vpservice@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheets/d/1nbvFVyuCLV4Ff_jU7DzQSIDXO4WfpkTup5Za2HCXwZg/edit#gid=12553775" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="dconModal" tabindex="-1" role="dialog" aria-labelledby="dconModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">DCON</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>March 27th to March 29th</p>
+                <p><b>Where?</b></p>
+                <p></p>
+                <p><b>Carpool:</b></p>
+                <p>8:15 am</p>
+                <p><b>Details</b></p>
+                <p>CNH, it's time to put your magnifying glass in your backpack and get your detective hats on because District Convention is coming to the Woodland Hills Marriott Hotel from March 27th to 29th 2015 and it is no MYSTERY why you don’t want to miss out on this once in a lifetime event. District Convention 2015 will put to use your detective know-hows as you navigate your way around the elections of our new District Board officers, the wide array of educational and fun workshops for new and returning members, an Awards Night that celebrates all of our District's amazing accomplishments, a jam-packed Saturday night of talent, dancing, and everything under the SUNNY sun of CNH. It’ll take a true sleuth to really figure out how many unforgettable memories you’ll make this weekend! So CNH, it’s time to put your detective skills to the test. Help us find Sunny Jr. before DCON 2015 and come out for a weekend that will leave you inspired and fired up about everything Circle K. Your search for service, leadership, and fellowship ends here at District Convention 2015.
+                </p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheets/d/1nbvFVyuCLV4Ff_jU7DzQSIDXO4WfpkTup5Za2HCXwZg/edit#gid=30" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- End Modals -->
+    <br>
+        
+        
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Our goals this year:</h1>
+        </div>
+        
+        <h2>6000 service hours</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+              77% (4630 hours)
+            </div>
+        </div>
+        
+        <h2>$7500 in fundraising for our <a href="initiatives.html">DFI's</a></h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width: 32%;">
+              32% ($2367.61 total)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+              40% ($1205.78 for the KFH)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              100% ($500 for PTP)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%;">
+              17% ($661.83 for Eliminate)
+            </div>
+        </div>
+    </div>
+     <br>
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+    
+</body>
+</html>

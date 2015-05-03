@@ -1,0 +1,1 @@
+$(".columns").equalHeights(100,300);

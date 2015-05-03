@@ -1,0 +1,5 @@
+.vertical-center-row
+{
+    display:table-cell;
+    vertical-align:middle;
+}

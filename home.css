@@ -1,0 +1,109 @@
+a.carousel-link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar
+{
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+}
+
+.collapse
+{
+    overflow: visible;
+}
+
+.jumbotron
+{
+    height:700px;
+    background-image: url("Images/world.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width : 768px)
+{
+    .jumbotron
+    {
+        background-image: url("Images/world-4.png");
+        background-size:auto;
+        height:400px;
+        background-position: 49% 50%;
+        background-color: black;
+    }
+}
+
+.jumbotron h1,h2
+{
+    color: white;
+}
+
+.jumbotron p
+{
+    color: white;
+}
+
+.caption
+{
+    text-align: center;
+}
+
+.slider-size
+{
+    height: 540px; /* This is your slider height */
+}
+.carousel
+{
+    width:100%; 
+    margin:0 auto; /* center your carousel if other than 100% */ 
+}
+
+.thumbnail
+{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px)
+{
+    .carousel-caption
+    {
+        right:0%;
+        left:0%;
+    }
+}
+
+.carousel-caption h2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+}
+
+.service h2
+{
+    background-color: #00a3d9;
+}
+
+.admin h2
+{
+    background-color: #2D6CFC;
+}
+
+.social h2
+{
+    background-color: #00b43d;
+}
+
+.leadership h2
+{
+    background-color: #ff3a16;
+}
+
+.out-of-state h2
+{
+    background-color: #ff8d16;
+}

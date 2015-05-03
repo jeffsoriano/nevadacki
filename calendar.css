@@ -1,0 +1,252 @@
+h3
+{
+    margin-left: 10px;
+}
+
+.calendar ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100%;
+}
+
+.calendar ul.month-browser li
+{
+    width:33.3%;
+    padding: 0;
+    border:0;
+    text-align: center;
+    text-transform: uppercase;
+    height: auto;
+    margin: 20px 0;
+}
+
+.calendar ul.weekdays li
+{
+    text-align: center;
+    line-height:20px;
+    border:none;
+    padding: 10px 6px;
+    font-size:13px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.calendar li.out-of-range
+{
+    background-color: #F5F5F5;
+    color: #666;
+}
+
+.calendar li
+{
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    overflow: visible;
+}
+
+.calendar .date
+{
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.calendar li .day, .calendar li .month
+{
+    display: none;
+}
+
+.service-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #00a3d9;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.service-info .service-name
+{
+    color: white;
+}
+
+.service-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.meeting-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #2D6CFC;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.meeting-info .meeting-name
+{
+    color: white;
+}
+
+.meeting-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.social-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #00b43d;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.social-info .social-name
+{
+    color: white;
+}
+
+.social-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.leadership-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #ff3a16;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.leadership-info .leadership-name
+{
+    color: white;
+}
+
+.leadership-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.district-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #ff8d16;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.district-info .district-name
+{
+    color: white;
+}
+
+.district-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.offday-info
+{
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #aa0fa3;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.offday-info .offday-name
+{
+    color: white;
+}
+
+.offday-info .event-time
+{
+    color: white;
+    margin-top:2px;
+    text-decoration: none;
+}
+
+.calendar-nav a
+{
+    transition: color ease-in-out 0.1s;
+}
+
+@media only screen and (max-width : 768px) {
+ 
+    .calendar .weekdays{
+        display: none;
+    }
+ 
+    .calendar li{
+        height: auto!important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .calendar li .day, .calendar li .month{
+        display: inline;
+    }
+ 
+    .calendar li.out_of_range {
+        display: none;
+    }
+}
+
+a:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="who-are-we.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="2014-10">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <img class="header-image" src="photos/FTC2.jpg"/>
+            </div>
+        </div>
+
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Fall Training Conference</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <p> Come one, come all!</p>
+                <p> Cal-Nev-Ha Circle K International presents Fall Training Conference 2014! Come be inspired and entertained by the greatest show on earth!</p>
+                <p> Fall Training Conference (FTC) is a weekend-long event where members of Cal-Nev-Ha go to Old Oak Ranch in Sonora, CA. In Sonora, you will be able to experience and be exposed to what Circle K is really about and will be able to gain so much knowledge from attending our amazing workshops hosted by members all across the district. In addition, you will be able to see and enjoy creative talent acts and campfire skits.</p>
+                <p> There will be general sessions filled with hundreds of spirited Circle K members, as well as a special addition of Big Top Brawl, a series of fun, competitive team games where members will get to bond and work together with others from all over CNH. Be a part of our fun, crazy dance and if you aren't feeling the groove, check out alternative activities consisting of a photo booth, movies, and carnival games! Finally, be ready to meet countless new friends and create long lasting Circle K memories!</p>
+            
+            <div class="carat-heading">
+                <img src="Images/Cyan-Caret.png"/>
+                <h1>Event Details</h1>
+             </div>
+            
+                <h2>When & Where</h2>
+                <p>November 7th-9th<br>
+                 Old Oak Ranch, Sonora, CA</p>
+                <h2>What to expect</h2>
+                 <p><a class="download-link" title href=http://ftc.cnhcirclek.org/download/712 rel="nofollow">Schedule</a></p>
+                 <p><a class="download-link" title href=http://ftc.cnhcirclek.org/download/714 rel="nofollow">Workshop Matrix</a></p>
+                 <p><a class="download-link" title href=http://ftc.cnhcirclek.org/download/592 rel="nofollow">Packing List</a></p>
+                <h2>Questions? Contact:</h2>
+                 <p>Aldrin Santamaria<br>
+                    <a href="mailto:president@nevadacki.com">president@nevadacirclek.com</a><br>
+                 </p>
+            </div>
+            <div class="col-md-4">
+                <img class="logo" src="photos/FTC3.jpg"/>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <img class="logo" src="photos/FTCSign.png"/>
+            </div>
+        </div>    
+    </div>
+
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class ="active"><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Get in touch with us! We won't bite</h1>
+        </div>       
+    </div>
+    
+    <div class="container">
+        <h3>Executive Board</h3>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4">Position</th>
+                            <th class="col-md-4">Name</th>
+                            <th class="col-md-4">E-mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>President</td>
+                            <td>Aldrin Santamaria</td>
+                            <td><a href="mailto:president@nevadacki.com">president@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vice President of Administration</td>
+                            <td>Matthew Molloy</td>
+                            <td><a href="vpadmin@nevadacki.com">vpadmin@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vice President of Service</td>
+                            <td>Miguel Henares</td>
+                            <td><a href="vpservice@nevadacki.com">vpservice@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Secretary</td>
+                            <td>Gabriella Murata</td>
+                            <td><a href="secretary@nevadacki.com">secretary@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Treasurer</td>
+                            <td>Cody Yamada</td>
+                            <td><a href="treasurer@nevadacki.com">treasurer@nevadacki.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        <h3>Appointed Board</h3>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4">Position</th>
+                            <th class="col-md-4">Name</th>
+                            <th class="col-md-4">E-mail</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Historian</td>
+                            <td>Jared Apostol</td>
+                            <td><a href="mailto:historian@nevadacki.com">historian@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kiwanis Family Chair</td>
+                            <td>Alyssa Yocom</td>
+                            <td><a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>K-Kids Chair</td>
+                            <td>Rosa Romero</td>
+                            <td><a href="mailto:k-kids@nevadacki.com">k-kids@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Membership Development & Education Chair</td>
+                            <td>Sarah Smith</td>
+                            <td><a href="mailto:membership@nevadacki.com">membership@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Public Relations Chair</td>
+                            <td>Jenny Kot</td>
+                            <td><a href="mailto:pr@nevadacki.com">pr@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Single Service Chair</td>
+                            <td>Esmond Fung</td>
+                            <td><a href="mailto:singleservice@nevadacki.com">singleservice@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Spirit Chair</td>
+                            <td>Raul Gutierrez</td>
+                            <td><a href="mailto:spirit@nevadacki.com">spirit@nevadacki.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Technology Chair</td>
+                            <td>Jeff Soriano</td>
+                            <td><a href="mailto:technology@nevadacki.com">technology@nevadacki.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        <h3>Advisors</h3>`
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4">Position</th>
+                            <th class="col-md-4">Name</th>
+                            <th class="col-md-4">E-mail</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Faculty Advisor</td>
+                            <td>Derek Furukawa</td>
+                            <td><a href="mailto:dfurukawa@unr.edu">dfurukawa@unr.edu</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kiwanis Advisor</td>
+                            <td>Tom Leahy</td>
+                            <td><a href="mailto:leahy891@cs.com">leahy891@cs.com</a></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+    </div>
+    
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Why not meet the rest of our family?</h1>
+        </div>       
+    </div>
+
+    <div class="container">
+        <h3>Capital Division</h3>
+        <div class="row row-centered">
+            <div class="col-md-3 col-centered">
+                <a href="mailto:capital@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/Cap_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="https://www.facebook.com/SacramentoStateCKI"><img class="logo" src="Images/capital-logos/sacramento.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="https://www.facebook.com/daviscki"><img class="logo" src="Images/capital-logos/davis.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="http://uopcirclek.org/"><img class="logo" src="Images/capital-logos/pacific.png"/></a>
+            </div>
+        </div>
+    </div>`
+        
+    <div class="container">
+        <h3>California-Nevada-Hawaii District</h3>
+        <div class="row row-centered">
+            <div class="col-md-3 col-centered">
+                <a href="mailto:centralcoast@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/CC_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="mailto:desertoasis@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/DO_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="mailto:foothill@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/FH_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="mailto:goldengate@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/GG_Color.png"/></a>
+            </div>
+        </div>
+        
+        <div class="row row-centered">
+            <div class="col-md-3 col-centered">
+                <a href="http://metrocirclek.weebly.com/"><img class="logo" src="Images/CNH-Division-Logos/Met_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="mailto:magickingdom@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/MK_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="http://paradisedivision.wix.com/cnhparadisedivision"><img class="logo" src="Images/CNH-Division-Logos/Par_Color.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="mailto:sunset@cnhcirclek.org"><img class="logo" src="Images/CNH-Division-Logos/SS_Color.png"/></a>
+            </div>
+        </div>
+         
+         <div class="row-centered">
+            <div class="col-md-3 col-centered">
+                <a href="http://www.cnhcirclek.org/"><img class="logo" src="Images/CNH-Division-Logos/CNH-District-Logo-New.png"/></a>
+            </div>
+         </div>
+    </div>`
+    
+    <div class="container">
+        <h3>Official CKI Website and Sponsoring Kiwanis Club</h3>
+        <div class="row row-centered">
+            <div class="col-md-3 col-centered">
+                <a href="http://www.circlek.org/home.aspx"><img class="logo" src="Images/cki-logo.png"/></a>
+            </div>
+            <div class="col-md-3 col-centered">
+                <a href="http://kiwanisrenosunrisers.com/wp/"><img class="logo" src="Images/CNH-Division-Logos/sunrisers.png"/></a>
+        </div>
+            
+    </div>`
+    
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+<body>
+
+
+
+</body>
+</html>

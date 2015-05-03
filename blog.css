@@ -1,0 +1,162 @@
+.collapse
+{
+    overflow: visible;
+}
+
+
+h1,h2,h3,h4,h5
+{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.masthead
+{
+    height:120px;
+    background-image:url("Images/center-letter-logo.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 200px 100px;
+    
+}
+
+.navbar .navbar-nav
+{
+  height: 45px;  
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse
+{
+  text-align: center;
+  height:200px;
+}
+
+.navbar-nav > li
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li img
+{
+    margin-left: 0px;
+    padding-right: 10px;
+    height: 15px;
+    width: auto;
+}
+
+footer
+{
+    text-align: center;
+}
+
+.stripes
+{
+    position: absolute;
+    left: 0px;
+    height:auto;
+    width: 100px;
+}
+.july2
+{
+    height: 150px;
+    background: url(photos/epic.jpg) no-repeat;
+    background-position: 47% 43%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.september13
+{
+    height: 390px;
+    background: url(photos/sept_DCM.jpg) no-repeat;
+    background-position: 47% 43%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.october27
+{
+    height: 390px;
+    background: url(photos/Kiwanis_bike_shop_picture.jpg) no-repeat;
+    background-position: 47% 43%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.november17
+{
+    height: 400px;
+    background: url(photos/pumpkin_palooza.jpg) no-repeat;
+    background-size: cover;
+    background-position: 24% 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.december1
+{
+    height: 400px;
+    background: url(photos/noan.jpg) no-repeat;
+    background-position: 50% 30%;
+    background-size: cover
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.february4-2
+{
+    height: 400px;
+    background: url(photos/bike-shop-2.jpg) no-repeat;
+    background-position: 50%, 40%;
+    background-size: cover
+    display: block
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.february4
+{
+    height: 600px;
+    background: url(photos/wedding-faire.jpg) no-repeat;
+    background-position: 50% 0%;
+    background-size: cover
+    display: block
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media only screen and (max-width : 320px)
+{
+    .july2
+    {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        background: url(photos/epic.jpg) no-repeat;
+        background-position: 33% 63%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.article
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: inherit;
+}
+
+.article .header
+{
+    text-align: center;
+}

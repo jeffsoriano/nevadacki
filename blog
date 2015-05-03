@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+        <div class="container">
+        <div class="article">
+            <div class="header">
+                <div class="october27"></div>
+                <h3>Kiwanis Bike Shop</h3>
+                <h4>October 27th, 2014</h4>
+                <h5>by Aaron Moss</h5>
+            </div>
+            <div class="content">
+                <p>Every other Friday from 3:00-5:00PM, Nevada Circle K members visit the Downtown Sparks Kiwanis Club’s Bike Shop. Here, <b>members are taught how to repair a variety of bikes,</b> ranging from bikes for little kids to the bikes that dot the playa where Burning Man is held. <b>And if fixing bikes isn’t your thing, there are other activities like organizing bookshelves or sewing PTP Dolls.</b> Regardless of what you do at the Bike Shop, this is a great event for anyone who attends, regardless if it is your first time attending or an event you attend regularly.</p>
+                <br></br>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="article">
+            <div class="header">
+                <div class="september13"></div>
+                <h3>September DCM</h3>
+                <h4>September 13th, 2014</h4>
+                <h5>by Aly Sicat</h5>
+            </div>
+            <div class="content">
+                <p>For the September Divisional Council Meeting, the University of the Pacific hosted us at Boggs Community Farm where we were able to do service in Stockton, CA. We <b>harvested lettuce to feed the animals and took out weeds from various crops.</b> This was my first time at a farm and it was really interesting. <b>I also had a nice time meeting all of the other Circle K members from all over Capital Division.</b></p><br></br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="article">
+            <div class="header">
+                <div class="july2"></div>
+                <h3>Why Do We Serve?</h3>
+                <h4>July 24th, 2014</h4>
+                <h5>by Alyssa Yocom</h5>
+            </div>
+            <div class="content">
+                <p>In Circle K, we like to focus on service. Whether it is for the community, for our campus, or for our friends, we are always willing to lend a helping hand. Yes, sometimes we get freebies, and sometimes we even get some free food. But for our wonderful members, service is so much mroe than receiving things</p>
+                <p>Service is about helping <b>just because we like to help!</b></p>
+                <p>Some of the most rewarding service events are ones where we get to interact with people or see our progress. It is rewarding to see that your work has helped someone in need, that you have made a difference in the community, or that you have just brightened someone's day. Nevada Circle K has made a huge impact in the Reno/Sparks community by cleaning up parks, helping the food bank, working at events on campus, and volunteering with other organizations. As a member, your efforts don't go unnoticed.</p>
+                <p>We are the people that make events happen and change lives.</p>
+                <p><b>We are volunteers, we are Circle K.</b></p>
+                <br></br>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <br>
+        
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+</body>
+</html>

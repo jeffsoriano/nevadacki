@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Nevada Circle K - Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="calendar.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap-3.2.0/js/bootstrap.js"></script>
+    <script src="jquery.equalheights.js"></script>
+    <script src="main.js"></script>
+    <script src="calendar.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="masthead">
+    </div>
+        
+    </div>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="home">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="who-are-we"><img src="Images/Cyan-Caret.png"/>Who are we?</a></li>
+                        <li><a href="initiatives"><img src="Images/Cyan-Caret.png"/>Initiatives</a></li>
+                        <li><a href="board"><img src="Images/Cyan-Caret.png"/>Meet the Board</a></li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="2014-11">Calendar</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="social-media"><img src="Images/Cyan-Caret.png"/>Social Media</a></li>
+                            <li><a href="newsletter"><img src="Images/Cyan-Caret.png"/>Newsletter</a></li>
+                            <li><a href="blog"><img src="Images/Cyan-Caret.png"/>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Check out what we're up to, then join us!</h1>
+        </div>       
+    </div>
+    
+    <div class="container">
+        <div class="calendar">
+            <ul class="month-browser">
+                <li class="calendar-nav">
+                    <<
+                    <a href="2014-10">October</a>
+                </li>
+                <li id="current-month">
+                    November 2014
+                </li>
+                <li class="calendar-nav">
+                    <a href="#">December</a>
+                    >>
+                </li>
+            </ul>
+            
+            <ul class="weekdays">
+                <li>Sunday</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+            </ul>
+            
+            <ul class="days">
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Oct</span>
+                         26
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#pumpkinPaloozaModal">Pumpkin Palooza</a>
+                        <div class="event-time">
+                            10:00 am to 5:30 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#pedestrianSafetyFair2Modal">Pedestrian Safety Fair</a>
+                        <div class="event-time">
+                            6:30 am to 12:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Oct</span>
+                         27
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Oct</span>
+                         28
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Oct</span>
+                         29
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Oct</span>
+                         30
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#trailOfTreatsModal">Trail of Treats</a>
+                        <div class="event-time">
+                            2:30 pm to 7:30 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Oct</span>
+                         31
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#sunrisers-meeting-Modal">Reno Sunrisers Kiwanis Meeting</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kiwanisBikeShopModal">Kiwanis Bike Shop</a>
+                        <div class="event-time">
+                            3:00 pm to 5:00 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Nov</span>
+                         1
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#concessionsModal5">Football Concessions #5</a>
+                        <div class="event-time">
+                            3:30 pm
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Nov</span>
+                         2
+                    </div>
+                    <div>
+                        <div class="social-info">
+                        <a class="social-name" data-toggle="modal" data-target="#postHalloweenHikeModal">Post Halloween Hike</a>
+                        <div class="event-time">
+                            9:00 am to 12:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Nov</span>
+                         3
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Nov</span>
+                         4
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Nov</span>
+                         5
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Nov</span>
+                         6
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Nov</span>
+                         7
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#ftcModal">Fall Training Conference</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Nov</span>
+                         8
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#ftcModal">Fall Training Conference</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#urbanRootsModal">Urban Roots</a>
+                        <div class="event-time">
+                        9:00am - 12:00pm
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+        
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Nov</span>
+                         9
+                    </div>
+                    <div class="district-info">
+                        <a class="district-name" data-toggle="modal" data-target="#ftcModal">Fall Training Conference</a>
+                        <div class="event-time">
+                            
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Nov</span>
+                         10
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Nov</span>
+                         11
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Nov</span>
+                         12
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Nov</span>
+                         13
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#passportToDiningModal">Passport To Dining</a>
+                        <div class="event-time">
+                            5:30 pm to 9:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Nov</span>
+                         14
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#sunrisers-meeting-Modal">Reno Sunrisers Kiwanis Meeting</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kiwanisBikeShopModal">Kiwanis Bike Shop</a>
+                        <div class="event-time">
+                            3:00 pm to 5:00 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#kiwanisTakeoverModal">Kiwanis Takeover</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                   <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#specialOlympicsBowlingFriModal">Special Olympics Bowling Regionals</a>
+                        <div class="event-time">
+                            5:00 pm to 9:30 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Nov</span>
+                         15
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#newMemberInstallationModal">New Member Installation</a>
+                        <div class="event-time">
+                            2:00 pm to 4:00 pm
+                        </div>
+                    </div>
+                   <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#specialOlympicsBowlingSatModal">Special Olympics Bowling Regionals</a>
+                        <div class="event-time">
+                            8:00 am to 12:00 pm
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Nov</span>
+                         16
+                    </div>
+                   <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#specialOlympicsBowlingSunModal">Special Olympics Bowling Regionals</a>
+                        <div class="event-time">
+                            8:00 am to 12:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Nov</span>
+                         17
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Nov</span>
+                         18
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Nov</span>
+                         19
+                    </div>
+                    <!--div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div-->
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#leadingWithCompassionModal">Leading with (Com)passion</a>
+                        <div class="event-time">
+                            7:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Nov</span>
+                         20
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Nov</span>
+                         21
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Nov</span>
+                         22
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#concessionsModal6">Football Concessions #6</a>
+                        <div class="event-time">
+                            3:30 pm
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="days">
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Nov</span>
+                         23
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Nov</span>
+                         24
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Nov</span>
+                         25
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Nov</span>
+                         26
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Nov</span>
+                         27
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Nov</span>
+                         28
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#sunrisers-meeting-Modal">Reno Sunrisers Kiwanis Meeting</a>
+                        <div class="event-time">
+                            7:00 am to 8:00 am
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kiwanisBikeShopModal">Kiwanis Bike Shop</a>
+                        <div class="event-time">
+                            3:00 pm to 5:00 pm
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Nov</span>
+                         29
+                    </div>
+                </li>
+                
+                <li class="calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sun,</span>
+                        <span class="month">Nov</span>
+                         30
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Mon,</span>
+                        <span class="month">Dec</span>
+                         1
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Tue,</span>
+                        <span class="month">Dec</span>
+                         2
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Wed,</span>
+                        <span class="month">Dec</span>
+                         3
+                    </div>
+                    <div class="meeting-info">
+                        <a class="meeting-name" data-toggle="modal" data-target="#meeting-Modal">General Meeting</a>
+                        <div class="event-time">
+                            7:00 pm to 8:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Thu,</span>
+                        <span class="month">Dec</span>
+                         4
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Fri,</span>
+                        <span class="month">Dec</span>
+                         5
+                    </div>
+                    <div class="service-info">
+                        <a class="service-name" data-toggle="modal" data-target="#kKidsModal">K-Kids</a>
+                        <div class="event-time">
+                            11:50 am to 1:00 pm
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="out-of-range calendar-day" style="height: 180px; overflow: auto;">
+                    <div class="date day-cell">
+                        <span class="day">Sat,</span>
+                        <span class="month">Dec</span>
+                         6
+                    </div>
+                </li>
+            </ul>
+            
+        </div> 
+    </div>
+    
+    <!-- Modals -->
+    
+    <div class="modal fade" id="sunrisers-meeting-Modal" tabindex="-1" role="dialog" aria-labelledby="sunrisers-meeting-Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Reno Sunrisers Kiwanis Meeting</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every other Friday, 7:00 am to 8:00 am</p>
+                <p><b>Where?</b></p>
+                <p>Gold N' Silver Inn, 790 W 4th St, Reno NV</p>
+                <p><b>Carpool</b></p>
+                <p>6:45 am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Attend our sponsoring Kiwanis club's meeting! Get to know your Kiwanians and listen to an interesting speaker each time you attend. There is free breakfast for attendees! Cap is set for this event, with priority going to new and general members.  </p>           
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=54" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+        <div class="modal fade" id="meeting-Modal" tabindex="-1" role="dialog" aria-labelledby="meeting-Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">General Meeting</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every Wednesday, 7:00 pm to 8:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>UNR, Graduate Student Lounge @ Joe Crowley Student Union</p>
+                <p><b>Details</b></p>
+                <p>Meet our members, get updated on events, eat free food, win raffle prizes, and have fun!</p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kiwanisBikeShopModal" tabindex="-1" role="dialog" aria-labelledby="kiwanisBikeShopModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Kiwanis Bike Shop</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every other Friday, 3:00 pm to 5:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Kiwanis Bike Shop, Carton Drive, Reno, NV</p>
+                <p><b>Carpool:</b></p>
+                <p>2:45 pm @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Work on fixing bikes, making PTP dolls, and organizing books! This is a great chance to get more involved with the Kiwanis Family.This event happens every other Friday from 3:00-5:00pm! </p>
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                <a href="https://docs.google.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=245" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kKidsModal" tabindex="-1" role="dialog" aria-labelledby="kKidsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">K-Kids</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>Every Friday, 11:50 am to 1:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Lemelson STEM Academy</p>
+                <p><b>Carpool:</b></p>
+                <p>11:40 am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Join us every Friday at Lemelson STEM Academy! We work with K-Kids to promote Service, Leadership, and Fellowship to elementary school students. This is a Kiwanis Family event!</p>
+                <p><b>Contact</b></p>
+                <p>Rosa Romero: <a href="mailto:kids@nevadacki.com">kids@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=314" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="concessionsModal5" tabindex="-1" role="dialog" aria-labelledby="concessionsModal5" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Football Concessions #5</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 1st, 3:30 pm to finished</p>
+                <p><b>Where?</b></p>
+                <p>Mackay Stadium, UNR</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Come raise money for our District Fundraising Initiatives by serving food, drinks, snacks, and FUN at our next football game! This is a great way to raise money for charity while hanging out and bonding with other Circle K'ers!</p>
+                <p><b>Contact</b></p>
+                <p>Cody Yamada: <a href="mailto:treasurer@nevadacki.com">treasurer@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=305" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="ftcModal" tabindex="-1" role="dialog" aria-labelledby="ftcModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Fall Training Conference</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 7th to November 9th</p>
+                <p><b>Where?</b></p>
+                <p>Sonora, CA</p>
+                <p><b>Carpool:</b></p>
+                <p>Varies</p>
+                <p><b>Details</b></p>
+                <p>Travel through the mountains to the town of Sonora to meet with members from all over California and Nevada for a weekend filled with campfire skits, dances, workshops, a secret new member ceremony, and more! For more information, visit ftc.cnhcirclek.org</p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=335" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="pumpkinPaloozaModal" tabindex="-1" role="dialog" aria-labelledby="pumpkinPaloozaModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Pumpkin Palooza</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>October 26th, 10:00 am to 2:00 pm and 1:30 pm to 5:30 pm</p>
+                <p><b>Where?</b></p>
+                <p>Trail Depot @ Victorian Square, Sparks NV</p>
+                <p><b>Carpool:</b></p>
+                <p>9:30 am and 1:30 pm @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>This Halloween themed festival is an annual celebration in Sparks. Volunteers will help work the midway games, activities stage, clean-up crew, beverage sales, and much more. Come out and have some fall fun with Circle K!</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@nevadacki.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="pedestrianSafetyFair2Modal" tabindex="-1" role="dialog" aria-labelledby="pedestrianSafetyFair2Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Pedestrian Safety Fair</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>October 26th, 6:30 am to 12:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Scheels at the Legends</p>
+                <p><b>Carpool:</b></p>
+                <p>6:15am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>We will be helping children learn more about pedestrian safety through fun and interactive games at Scheels at the Legends in Sparks.</p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="trailOfTreatsModal" tabindex="-1" role="dialog" aria-labelledby="trailOfTreatsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Trail of Treats</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>October 30th, 2:30 pm to 7:30 pm</p>
+                <p><b>Where?</b></p>
+                <p>Incline Village</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>We will be running the "Ghost Darts" booth at this fun-filled Halloween festival at the lakeside town of Incline!</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@nevadacki.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="urbanRootsModal" tabindex="-1" role="dialog" aria-labelledby="urbanRootsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Trail of Treats</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 8th, 9:00 am to 12:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>3001 W. 4th St. #12, Reno, NV 89523</p>
+                <p><b>Carpool:</b></p>
+                <p>8:30am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Urban Roots is a local farm dedicated to growing healthy minds, bodies and communities through education and direct service. Come out and help us clean things up, do sme garden work, and maintain the grounds!</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@nevadacki.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="kiwanisTakeoverModal" tabindex="-1" role="dialog" aria-labelledby="kiwanisTakeoverModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Trail of Treats</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 14th, 7:00 am to 8:00 am</p>
+                <p><b>Where?</b></p>
+                <p>Gold N' Silver</p>
+                <p><b>Carpool:</b></p>
+                <p>6:30am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>This is one of the biggest fundraisers that our club has each year. We take over our local Kiwanis Club's meeting by running the meeting and having an auction. We auction off special baskets and home made baked goods. All of the funds made go to our club. This is our chance to show our Kiwanians what Circle K is all about!</p>
+                <p><b>Contact</b></p>
+                <p>Alyssa Yocom: <a href="mailto:kiwanisfamily@nevadacki.com">kiwanisfamily@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="postHalloweenHikeModal" tabindex="-1" role="dialog" aria-labelledby="postHalloweenHikeModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Post Halloween Hike</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 2nd, 9:00 am to 12:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Keystone Ave and McCarran Ave</p>
+                <p><b>Carpool:</b></p>
+                <p>8:30am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Fall is here, which means the sun is going away! Let's go hiking one last time (on Haloween) before winter comes and it gets even colder! We'll be going on a Twilight Hike, so it will be pretty chilly! Bring lotsa water and be prepared to HIKEEEE! :D</p>
+                <p><b>Contact</b></p>
+                <p>Jared Apostol: <a href="mailto:historian@nevadacki.com">historian@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="passportToDiningModal" tabindex="-1" role="dialog" aria-labelledby="passportToDiningModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Passport To Dining</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 13th, 5:30 pm to 7:00 pm and/or 7:00 pm to 9:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>Kings Beach</p>
+                <p><b>Carpool:</b></p>
+                <p>4:00 pm or 5:30am @ Joe Shuttle Stop</p>
+                <p><b>Details</b></p>
+                <p>Passport to Dining is North Tahoe’s most affordable food and beverage tasting event and is a not-to-miss fall social gathering. We will be volunteering for the event by helping with ticket sales, check-in, clearing plates, and working in the kitchen. Volunteers will get time to go and experience the event and get FREE FOOD!</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@nevadacki.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="newMemberInstallationModal" tabindex="-1" role="dialog" aria-labelledby="newMemberInstallationModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Member Installation</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 15th, 2:30 pm to 4:30 pm</p>
+                <p><b>Where?</b></p>
+                <p>Joe Ballroom A</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Are you a new member? If yes, you should most certianly come to this event! It is a night to celebrate you as a new member and what you have done so far for this club. Remember it is a vacation to your island destination! Hope to see you there! :D</p>
+                <p><b>Contact</b></p>
+                <p>Sarah Smith: <a href="mailto:historian@membership.com">membership@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="specialOlympicsBowlingFriModal" tabindex="-1" role="dialog" aria-labelledby="specialOlympicsBowlingFriModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Special Olympics Bowling Regionals</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 14th, 5:00 pm to 9:30 pm and 7:00 pm to 9:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>TBA</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Friday night at the dance we try to keep the athletes in the area of the dance, dance with them & any other need that happens to come up. The athletes alway enjoy the dance and have a great time. On Saturday & Sunday we help on the bowling lanes to make sure the bowlers stay in the correct order and on the correct lane. We need help serving lunches, running score sheets & medals, and any other needs that come up.</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@membership.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="specialOlympicsBowlingSatModal" tabindex="-1" role="dialog" aria-labelledby="specialOlympicsBowlingSatModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Special Olympics Bowling Regionals</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 15th, 8:00 am to 12:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>TBA</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Friday night at the dance we try to keep the athletes in the area of the dance, dance with them & any other need that happens to come up. The athletes alway enjoy the dance and have a great time. On Saturday & Sunday we help on the bowling lanes to make sure the bowlers stay in the correct order and on the correct lane. We need help serving lunches, running score sheets & medals, and any other needs that come up.</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@membership.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="specialOlympicsBowlingSunModal" tabindex="-1" role="dialog" aria-labelledby="specialOlympicsBowlingSunModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Special Olympics Bowling Regionals</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 16th, 8:00 am to 12:00 pm</p>
+                <p><b>Where?</b></p>
+                <p>TBA</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Friday night at the dance we try to keep the athletes in the area of the dance, dance with them & any other need that happens to come up. The athletes alway enjoy the dance and have a great time. On Saturday & Sunday we help on the bowling lanes to make sure the bowlers stay in the correct order and on the correct lane. We need help serving lunches, running score sheets & medals, and any other needs that come up.</p>
+                <p><b>Contact</b></p>
+                <p>Miguel Henares: <a href="mailto:vpservice@membership.com">vpservice@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="concessionsModal6" tabindex="-1" role="dialog" aria-labelledby="concessionsModal6" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Football Concessions #6</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 22nd, 3:30 pm to finished</p>
+                <p><b>Where?</b></p>
+                <p>Mackay Stadium, UNR</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>Come raise money for our District Fundraising Initiatives by serving food, drinks, snacks, and FUN at our next football game! This is a great way to raise money for charity while hanging out and bonding with other Circle K'ers!</p>
+                <p><b>Contact</b></p>
+                <p>Cody Yamada: <a href="mailto:treasurer@nevadacki.com">treasurer@nevadacki.com</a></p>
+                <a href="https://docs.google.com/a/nevadacki.com/spreadsheet/ccc?key=0AgCMBCVEVZgGdFNIQjBwa01EQlo1NS1KNDNxSi00Qnc#gid=305" target="#">Sign-up sheet</a>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="leadingWithCompassionModal" tabindex="-1" role="dialog" aria-labelledby="leadingWithCompassionModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Leading with (Com)passion</h4>
+                    </div>
+                <div class="modal-body">
+                <p><b>When?</b></p>
+                <p>November 19th, 7:00 pm to finished</p>
+                <p><b>Where?</b></p>
+                <p>JCSU Ballroom C</p>
+                <p><b>Carpool:</b></p>
+                <p></p>
+                <p><b>Details</b></p>
+                <p>In lieu of our usual weekly meeting, on November 19th our Faculty Advisor Derek Furukawa will be giving a talk titled "Leading with (Com)passion" in JCSU Ballroom C and catered by L&L Hawaiian BBQ. This event is a collaboration wih Kharisma and all proceeds will be donated to the Children's Cabinet and the Kiwanis Family House. Tickets are $6 pre-sale & $8 at the door!</p>
+                <p><b>Contact</b></p>
+                <p>Aldrin Santamaria: <a href="mailto:president@nevadacki.com">president@nevadacki.com</a></p>
+                <p>Jenny Kot: <a href="mailto:pr@nevadacki.com">pr@nevadacki.com</a></p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
+        
+        
+    <div class="container">
+        <div class="carat-heading">
+            <img src="Images/Cyan-Caret.png"/>
+            <h1>Our goals this year:</h1>
+        </div>
+        
+        <h2>6000 service hours</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+              77% (4630 hours)
+            </div>
+        </div>
+        
+        <h2>$7500 in fundraising for our <a href="initiatives">DFI's</a></h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width: 32%;">
+              32% ($2367.61 total)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+              40% ($1205.78 for the KFH)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+              100% ($500 for PTP)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%;">
+              17% ($661.83 for Eliminate)
+            </div>
+        </div>
+    </div>
+     <br>
+    <footer>
+        <p>Copyright © 2014-2015 Nevada Circle K International. All Rights Reserved.</p>
+        <a href="http://www.kiwanis.org/"><img src="Images/Kiwanis-SLP-Logo-BLUE.png" width=15% height=auto/></a>
+    </footer>
+    
+    <br>
+    
+</body>
+</html>

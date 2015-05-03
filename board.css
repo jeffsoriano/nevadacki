@@ -1,0 +1,73 @@
+.jumbotron
+{
+    
+    margin-top: 0px;
+    height: 550px;
+    width: auto;
+    background-image: url("photos/board/group.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width : 768px)
+{
+    .jumbotron
+    {
+        display:none;
+    }
+    
+    .carat-heading
+    {
+        margin-bottom: 3px;
+    }
+}
+
+.jumbotron:hover
+{
+    
+    background-image: url("photos/board/group-silly.jpg");
+}
+
+.jumbotron h1,h2
+{
+    color: white;
+}
+
+.jumbotron p
+{
+    color: white;
+}
+
+.caption
+{
+    text-align: center;
+}
+
+@media only screen and (max-width : 991px)
+{
+    .row
+    {
+        text-align:center;
+    }
+    
+    .col-md-3
+    {
+        display:inline-block;
+        float:none;
+        /* reset the text-align */
+        text-align:left;
+        /* inline-block space fix */
+        margin-right:-4px;
+    }
+}
+
+a:hover
+{
+    cursor: pointer;
+}
+ 
+.row
+{
+    margin:0;
+}
